@@ -11,11 +11,12 @@
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -74,7 +75,7 @@
                 </div>
 
                 <div class="advantages__item">
-                    <div class="advantages__icon">
+                    <div class="advantages__icon advantages__icon_animated">
                         <img src="icons/advantages/heart.png" alt="heart">
                     </div>
                     <div class="advantages__subheader">Заботимся о здоровье</div>
@@ -104,7 +105,7 @@
             </div>
             <form id="consultation-form" class="feed_form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -411,7 +412,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/reviews/photo_1.png" alt="Ирина Иванченко" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Ирина Иванченко</div>
@@ -427,7 +428,7 @@
                 </div>
             </div>
 
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/reviews/photo_2.png" alt="Иван Сёмочкин" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -443,7 +444,7 @@
                 </div>
             </div>
 
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/reviews/photo_3.png" alt="Юлия Дашкина" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -485,7 +486,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed_form feed_form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -498,7 +499,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed_form feed_form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit">Купить</button>
@@ -512,12 +513,19 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
+
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

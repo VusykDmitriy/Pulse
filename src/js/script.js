@@ -132,4 +132,35 @@ $(document).ready(function () {
   valideForms('#consultation form');
   valideForms('#order form');
 
+  //Маска для номера
+
+  $('input[name=phone]').mask("+38 (999) 999-99-99");
+
+  //Плавный скрол и pageup
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 1600) {      //Если скролл сверху превышает 1600px - появляется стрелка
+      $('.pageup').fadeIn();
+    } 
+    else {                                //Если не превышает 1600px, то стрелка скрыта
+      $('.pageup').fadeOut();
+    }
+  });
+
+  //Плавный скрол
+
+  $('a[href^="#"').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});
+
+  //Подключение WOW библиотеки
+
+new WOW().init();
+
 });
