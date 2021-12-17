@@ -149,7 +149,7 @@ $(document).ready(function () {
 
   //Плавный скрол
 
-  $('a[href^="#"').on('click', function() {
+  $('a[href^=#up').on('click', function() {
 
     let href = $(this).attr('href');
 
